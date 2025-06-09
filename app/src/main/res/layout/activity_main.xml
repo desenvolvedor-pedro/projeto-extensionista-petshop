@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient_background"
+    tools:context=".activities.MainActivity">
+
+    <!-- Ícone de Logout no canto superior esquerdo -->
+    <ImageButton
+        android:id="@+id/bton_deslogar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_logout"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Deslogar do aplicativo"
+        android:onClick="trocar_Tela_Deslogar"
+        android:scaleType="centerInside"
+        android:layout_margin="8dp"
+        app:tint="@color/white" />
+
+    <!-- Conteúdo principal centralizado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <!-- Logo centralizado -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/logo" />
+
+        <!-- Botões de opções -->
+        <Button
+            android:id="@+id/btn_food"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/orange"
+            android:text="Rações"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_toys"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/orange"
+            android:text="Brinquedos"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_hygiene"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/orange"
+            android:text="Higiene"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_add_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/orange"
+            android:text="Adicionar Produto"
+            android:textColor="@color/white" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

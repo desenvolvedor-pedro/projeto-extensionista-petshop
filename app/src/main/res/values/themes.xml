@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Appagendamento" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimaryVariant">@color/black</item>
+
+        <!--codigo para tela cheia-->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.Appagendamento" parent="Base.Theme.Appagendamento" />
+
+    <!--Para tela cheia-->
+    <style name="Theme.Appagendamento.Fullscreen" parent="Base.Theme.Appagendamento">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+
+</resources>

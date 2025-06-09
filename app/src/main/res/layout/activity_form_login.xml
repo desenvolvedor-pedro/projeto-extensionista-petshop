@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- para ficar responsivo a horizontal -->
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".FormLogin">
+
+    <!--linha 7: chama o background criado no drawable-->
+
+    <!--Foi criado uma view para definir todos os componentes-->
+    <!--Na view, foi definido a altura e largura dentro do styles.xml -->
+    <!--chamamos o arquivo do arredondamento da view e dentro de style="@style/ContainerComponents"-->
+    <!-- -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="385dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloLogin"
+        android:layout_width="103dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="176dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="27sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/containerComponents"
+        style="@style/ContainerComponents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloLogin" />
+
+    <EditText
+        android:id="@+id/campoEmailLogin"
+        style="@style/Edit_Text"
+        android:drawableRight="@drawable/icone_email"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toTopOf="@id/containerComponents" />
+
+    <EditText
+        android:id="@+id/campoSenhaLogin"
+        style="@style/Edit_Text_senha"
+        android:drawableRight="@drawable/icone_olho"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/containerComponents"
+        app:layout_constraintStart_toStartOf="@id/containerComponents"
+        app:layout_constraintTop_toBottomOf="@+id/campoEmailLogin" />
+
+    <!--A tag button não funciona com o estilo, logo precisa mudar
+    os atributos de outra forma, no caso, a tag abaixo-->
+    <!--android:text="@string/entrar" .Essa forma é boa prática,
+    mas eu utilizei a forma tradicional-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botaoEntrarLogin"
+        style="@style/ButtonLogin"
+        android:onClick="trocar_para_Tela_Cadastro"
+        android:text="Entrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoSenhaLogin" />
+
+    <ProgressBar
+        android:id="@+id/barra_de_progresso_login"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:indeterminateTint="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerComponents" />
+
+    <TextView
+        android:id="@+id/tituloNaoPossuiUmaConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Não possui uma conta?"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barra_de_progresso_login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_tela_cadastrar"
+        style="@style/ButtonCadastro"
+
+        android:layout_marginRight="55dp"
+        android:layout_marginLeft="55dp"
+        android:onClick="trocar_para_Tela_Cadastro"
+        android:text="Cadastrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloNaoPossuiUmaConta" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

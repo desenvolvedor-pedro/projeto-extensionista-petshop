@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pink">#E0BBE4</color>
+    <color name="creme">#FFF5E4</color>
+    <color name="blueWeak">#AEC6CF</color>
+    <color name="whiteWeak">#4A4A4A</color>
+    <color name="yellow">#FFD93D</color>
+    <color name="orange">#F57C00</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="gray_600">#757575</color>
+    <color name="colorPrimary">#FF9800</color> <!-- Cor laranja - altere para a sua cor -->
+</resources>

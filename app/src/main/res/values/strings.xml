@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Petshop</string>
+    <!--<string name="entrar">Entrar</string>
+    a linha 3 está substituindo o Entrar do botao
+    "Entrar" na interface "activity_form_login_xml", isso é para
+    organizar-->
+    <string name="texto_sublinhado_cadastro"><u>Não possui uma conta?</u></string>
+
+    <!-- Main Activity -->
+    <string name="product_image_desc">Imagem do produto</string>
+
+    <!-- Cart -->
+    <string name="remove_item">Remover item</string>
+    <string name="compra_sucesso">Compra efetuada com sucesso!</string>
+    <string name="total">Total: %s</string>
+
+    <!-- Product -->
+    <string name="buy_now">Comprar agora</string>
+    <string name="add_to_cart">Adicionar ao carrinho</string>
+    <string name="go_to_cart">Ir para o carrinho</string>
+
+    <!-- Formulário -->
+    <string name="product_name">Nome do Produto</string>
+    <string name="product_description">Descrição</string>
+    <string name="product_price">Preço</string>
+    <string name="product_image_url">URL da Imagem (opcional)</string>
+    <string name="product_category">Categoria (food, toys, hygiene)</string>
+    <string name="save_product">Salvar Produto</string>
+
+    <!-- Acessibilidade -->
+    <string name="cart_items_list">Lista de itens do carrinho</string>
+    <string name="total_default">Total: R$ 0,00</string>
+    <string name="checkout">Finalizar Compra</string>
+    <string name="category_products_list">Lista de produtos da categoria</string>
+    <string name="toolbar_desc">Barra de ferramentas</string>
+    <string name="buy_now_desc">Comprar agora</string>
+    <string name="add_to_cart_desc">Adicionar ao carrinho</string>
+
+    <!-- Acessibilidade -->
+    <string name="products_list_desc">Lista de produtos</string>
+    <string name="cart_button_desc">Abrir carrinho de compras</string>
+    <string name="remove_item_desc">Remover item</string>
+
+</resources>
